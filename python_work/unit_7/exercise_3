@@ -1,0 +1,41 @@
+#7-5 电影票
+#变量active
+print('M1')
+prompt = "Please enter the your age:"
+prompt += "\n(Enter 'quit' when you are finished.) "
+active = True
+while active:
+    age = input(prompt)
+    if age == 'quit':
+        active = False
+    else:
+        age = int(age)
+        if age < 3:
+            print('free')
+        elif age <= 12:
+            print('$10')
+        else:
+            print('$15')
+
+#break语句
+print('M2')    
+prompt = "Please enter the your age:"
+prompt += "\n(Enter 'quit' when you are finished.) "
+while True:
+    age = input(prompt)
+    if age == 'quit':
+        break
+    else:
+        age = int(age)
+        if age < 3:
+            print('free')
+        elif age <= 12:
+            print('$10')
+        else:
+            print('$15')
+#int()函数在active那个循环的开头使用 而不放在while循环的最开始
+            
+#7-7 无限循环
+
+    
+
